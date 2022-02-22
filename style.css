@@ -1,0 +1,75 @@
+@import url("http://fonts.cdnfonts.com/css/virgil-black");
+
+@font-face {
+  font-family: virgil;
+  src: url(./Virgil.woff2);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(80.99% 100% at 50% 0%, #00ff0a 0%, #36008e 100%),
+    radial-gradient(50% 123.47% at 50% 50%, #efe7c8 0%, #36008e 100%),
+    linear-gradient(301.28deg, #ff006b 0%, #48dd9e 100%),
+    linear-gradient(294.84deg, #5a60e4 0%, #d30000 100%),
+    linear-gradient(52.29deg, #000000 0%, #00ff85 100%),
+    radial-gradient(100% 138.69% at 100% 0%, #0007a5 0%, #ff7a00 100%),
+    radial-gradient(70.41% 100% at 50% 0%, #d5b300 0%, #2200aa 100%);
+  background-blend-mode: screen, screen, lighten, overlay, lighten, difference,
+    normal;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 90%;
+
+  display: flex;
+  text-align: center;
+  font-family: virgil;
+}
+
+.tagline {
+  line-height: 5rem;
+  font-size: 3rem;
+}
+
+.explore {
+  background-color: transparent;
+  border: none;
+
+  border: 1px solid black;
+  padding: 12px 40px;
+
+  border-image-slice: 1;
+  border-width: 3px;
+  margin-top: 25px;
+  font-size: 1.2rem;
+  border-image-source: linear-gradient(to left, #00c853, #b2ff59);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore:hover {
+  cursor: pointer;
+  background: linear-gradient(to left, #00c853, #b2ff59);
+}
