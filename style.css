@@ -1,15 +1,21 @@
+@import url('http://fonts.cdnfonts.com/css/clash-display');
 
+@font-face {
+  font-family: Clash Display;
+  src: url(./ClashDisplay-Bold.otf);
+}
 
 html {
   box-sizing: border-box;
 
-font-family: 'Clash Display' sans-serif;
+font-family: 'Clash Display'
 }
 
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: inherit;
+  font-family: inherit;
 }
 
 body {
